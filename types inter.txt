@@ -1,0 +1,4 @@
+interpolation cont var in html
+prop binding of html elem inside a css
+event binding 
+2 way data binding 

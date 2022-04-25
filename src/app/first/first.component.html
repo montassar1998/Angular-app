@@ -1,0 +1,11 @@
+<p>je suis le composent fils</p>
+<!-- in {{}} is an interpolation whereas the [style.backgroundColor] is  a property binding -->
+<p  [style.backgroundColor]="color">je m'appelle <span [style.backgroundColor]="color" >{{name}}</span></p>
+<!-- this is a 2 way data binding -->
+<input [(ngModel)]="name" type="text">
+<!--property binidng -->
+<div [hidden]="hd" [style.backgroundColor]="cl">Orange Dev Center</div>
+<!--event binding-->
+<button (click)="traitementDuBouton()">Click me </button>
+<app-child (msgToParent)="traitement($event)" [received]="msgtoChild" [myColor]="cl" ></app-child>
+<p>{{s}}</p>
