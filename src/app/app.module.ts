@@ -10,6 +10,7 @@ import { WordComponent } from './word/word.component';
 import { NgClassPracticeComponent } from './ng-class-practice/ng-class-practice.component';
 import { ShortenNamePipe } from './shorten-name.pipe';
 import { FormatStatusPipe } from './format-status.pipe';
+import { DefaultImagePipe } from './default-image.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormatStatusPipe } from './format-status.pipe';
     WordComponent,
     NgClassPracticeComponent,
     ShortenNamePipe,
-    FormatStatusPipe
+    FormatStatusPipe,
+    DefaultImagePipe
   ],
   imports: [
     BrowserModule, FormsModule

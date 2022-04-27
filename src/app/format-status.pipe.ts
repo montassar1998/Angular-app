@@ -9,12 +9,11 @@ export class FormatStatusPipe implements PipeTransform {
   srv: Array<server>;
   i: any;
   transform(items: Array<server>, term: string): any {
-    if(term==""){
+  if (term == "") {
       return items;
     }
-
     //starts with can help up with an utocomplete feature
-    
+
     return items.filter(e => e.status.toLowerCase() == term.toLowerCase());
 
 

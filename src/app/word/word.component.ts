@@ -20,18 +20,18 @@ export class WordComponent implements OnInit {
   async modifySize(a: string) {
 
     //this.faceSize=(this.i)+"px";
-    function delay(ms: number) {
-      return new Promise(resolve => setTimeout(resolve, ms));
-    }
-   while(true){
-    for(let i=0;i<400;i++){
-      this.faceSize=i+"px";
+  //   function delay(ms: number) {
+  //     return new Promise(resolve => setTimeout(resolve, ms));
+  //   }
+  //  while(true){
+  //   for(let i=0;i<400;i++){
+      this.faceSize=a+"px";
       //alert(typeof(this.faceSize))
-      await delay(2);
-    }
+    //   await delay(2);
+    // }
   }
     
   }
   // this.faceSize=a+"px";
 
-}
+// }
