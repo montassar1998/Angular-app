@@ -1,0 +1,23 @@
+<p>ng-class-practice works!</p>
+
+<div>
+    <div class="container">
+        <input type="text" [(ngModel)]="stringToSearch" >
+        <br>
+        <p>{{stringToSearch}}</p>
+
+        
+
+        <ul class="list-group">
+            <div *ngFor="let a of s | formatStatus :stringToSearch" >
+                <li class="list-group-item" 
+                    [ngClass]="{'list-group-item-success' : a.status=='Success','list-group-item-danger':a.status=='Danger','list-group-item-warning' : a.status=='Warning'}">
+                    {{a.type | shortenName :3}} {{a.calibre}} {{a.date}}
+                    <span class="badge bg-secondary"
+                        [ngClass]="{'bg-success' : a.status=='Success','bg-danger':a.status=='Danger','bg-warning' : a.status=='Warning'}">{{a.status}}</span>
+                </li>
+            </div>
+        </ul>
+    </div>
+
+</div>

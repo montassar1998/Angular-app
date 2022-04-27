@@ -1,0 +1,17 @@
+<div id="" name="w3review" rows="4" cols="50" [ngStyle]="{'background-color':bgColor,
+color:colorT,
+fontFamily:faceF,
+fontSize:faceSize}">
+    GOAL !!!!!!!
+</div>
+<input type="text" [(ngModel)]="colorT"><br>
+<input type="text" [(ngModel)]="bgColor"><br>
+<input type="number" #sz (change)="modifySize(sz.value)"><br>
+
+<select type="text" id="fontsize" [(ngModel)]="faceF">
+    <option value="arial">arial</option>
+    <option value="Copperplate">Copperplate
+    </option>
+    <option value="sans-serif">sans serif</option>
+</select><br>
+<p>{{faceF}}</p>
